@@ -1,0 +1,2701 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kejutan Ulang Tahun 💙</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+   :root {
+    --blue-dark: #0B1F3A;
+    --blue-deep: #123B6D;
+    --blue: #2563EB;
+    --blue-light: #60A5FA;
+    --blue-soft: #DBEAFE;
+    --white: #FFFFFF;
+
+    --text: #F8FAFC;
+    --text-soft: #DCE7F5;
+
+    --hot-pink: #EC4899;
+    --rose-pink: #F472B6;
+    --pink-dark: #9D174D;
+
+    --glass: rgba(255, 255, 255, 0.13);
+    --glass-hover: rgba(255, 255, 255, 0.19);
+
+    --border: rgba(255, 255, 255, 0.22);
+    --shadow: rgba(37, 99, 235, 0.28);
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(96, 165, 250, 0.20),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(37, 99, 235, 0.20),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #071426,
+            #0B1F3A 45%,
+            #123B6D
+        );
+}
+.background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   KELOPAK BUNGA
+========================= */
+
+.background span {
+    position: absolute;
+
+    top: -50px;
+
+    width: 16px;
+    height: 23px;
+
+    background: #dbeafe;
+
+    border-radius: 70% 30% 70% 30%;
+
+    opacity: 0.75;
+
+    box-shadow:
+        0 0 8px rgba(147, 197, 253, 0.35);
+
+    animation:
+        flowerFall linear infinite;
+}
+
+
+/* =========================
+   POSISI & UKURAN BERBEDA
+========================= */
+
+.background span:nth-child(1) {
+    left: 8%;
+
+    width: 13px;
+    height: 19px;
+
+    animation-duration: 11s;
+    animation-delay: 0s;
+}
+
+.background span:nth-child(2) {
+    left: 20%;
+
+    width: 18px;
+    height: 25px;
+
+    animation-duration: 14s;
+    animation-delay: 3s;
+}
+
+.background span:nth-child(3) {
+    left: 35%;
+
+    width: 11px;
+    height: 17px;
+
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+
+.background span:nth-child(4) {
+    left: 50%;
+
+    width: 20px;
+    height: 27px;
+
+    animation-duration: 15s;
+    animation-delay: 5s;
+}
+
+.background span:nth-child(5) {
+    left: 63%;
+
+    width: 14px;
+    height: 21px;
+
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+.background span:nth-child(6) {
+    left: 75%;
+
+    width: 19px;
+    height: 26px;
+
+    animation-duration: 16s;
+    animation-delay: 4s;
+}
+
+.background span:nth-child(7) {
+    left: 87%;
+
+    width: 12px;
+    height: 18px;
+
+    animation-duration: 13s;
+    animation-delay: 6s;
+}
+
+.background span:nth-child(8) {
+    left: 95%;
+
+    width: 16px;
+    height: 23px;
+
+    animation-duration: 17s;
+    animation-delay: 1s;
+}
+
+
+/* =========================
+   ANIMASI JATUH
+========================= */
+
+@keyframes flowerFall {
+
+    0% {
+        transform:
+            translate3d(0, -50px, 0)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.75;
+    }
+
+    25% {
+        transform:
+            translate3d(35px, 25vh, 0)
+            rotate(90deg);
+    }
+
+    50% {
+        transform:
+            translate3d(-30px, 50vh, 0)
+            rotate(180deg);
+    }
+
+    75% {
+        transform:
+            translate3d(40px, 75vh, 0)
+            rotate(270deg);
+    }
+
+    90% {
+        opacity: 0.6;
+    }
+
+    100% {
+        transform:
+            translate3d(-20px, 110vh, 0)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
+/* =========================
+   MAIN CARD
+========================= */
+
+#app {
+    width: min(90%, 650px);
+    min-height: 500px;
+
+    padding: 45px 35px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+/* Cahaya lembut pada card */
+
+#app::before {
+    content: "";
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    background: rgba(96, 165, 250, 0.15);
+
+    border-radius: 50%;
+
+    top: -100px;
+    right: -80px;
+
+    filter: blur(50px);
+
+    pointer-events: none;
+}
+
+/* =========================
+   PAGE
+========================= */
+
+#page7 {
+    width: min(90%, 650px);
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 45px 35px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+#page7 > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+#page7 h2 {
+    margin: 0 !important;
+    color: #DBEAFE !important;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 5vw, 36px);
+    line-height: 1.3;
+    text-align: center;
+    text-shadow: 0 4px 18px rgba(96, 165, 250, 0.28);
+}
+
+.open-card-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 190px;
+    padding: 14px 26px;
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 14px;
+    background: linear-gradient(135deg, #2563EB, #3B82F6);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(37,99,235,.25);
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+
+.open-card-btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #3B82F6, #60A5FA);
+    box-shadow: 0 12px 25px rgba(37,99,235,.32);
+}
+
+.open-card-btn:active {
+    transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+    #page7 {
+        width: 92%;
+        min-height: 520px;
+        padding: 30px 20px;
+        border-radius: 24px;
+    }
+
+    #page7 h2 {
+        font-size: 27px;
+    }
+
+    .open-card-btn {
+        width: 100%;
+        max-width: 260px;
+    }
+}
+
+.page {
+    display: none;
+
+    width: 100%;
+    min-height: 410px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    animation: pageIn .6s ease;
+}
+
+.page.active {
+    display: flex;
+}
+
+@keyframes pageIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   TEXT
+========================= */
+
+h1 {
+    color: var(--white);
+
+    font-size: clamp(28px, 5vw, 40px);
+
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+
+    text-shadow:
+        0 4px 20px rgba(96, 165, 250, 0.35);
+
+    margin-bottom: 12px;
+}
+
+p {
+    color: var(--text-soft);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    max-width: 500px;
+}
+
+/* =========================
+   BIG HEART
+========================= */
+
+.big-heart {
+    font-size: 75px;
+
+    margin-bottom: 10px;
+
+    animation: heartbeat 2s ease-in-out infinite;
+
+    filter:
+        drop-shadow(0 8px 18px rgba(96, 165, 250, 0.35));
+}
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.10);
+    }
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563EB,
+            #3B82F6
+        );
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.25);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #3B82F6,
+            #60A5FA
+        );
+
+    box-shadow:
+        0 12px 25px rgba(37, 99, 235, 0.32);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}
+
+/* =========================
+   PIN DISPLAY
+========================= */
+
+.pin-display {
+    display: flex;
+
+    gap: 10px;
+
+    margin: 25px 0;
+}
+
+.pin-box {
+    width: 42px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    color: var(--blue);
+
+    border: 2px solid rgba(96, 165, 250, 0.35);
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform .2s ease,
+        border-color .2s ease;
+}
+
+/* =========================
+   NUMPAD
+========================= */
+
+.numpad {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 70px);
+
+    gap: 10px;
+
+    justify-content: center;
+
+    margin-top: 15px;
+}
+
+.numpad button {
+    height: 55px;
+
+    border: 1px solid rgba(255, 255, 255, 0.16);
+
+    border-radius: 13px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(8px);
+
+    transition:
+        transform .2s ease,
+        background .2s ease,
+        box-shadow .2s ease;
+}
+
+.numpad button:hover {
+    background: rgba(96, 165, 250, 0.20);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.numpad button:active {
+    transform: scale(.96);
+}
+
+/* =========================
+   ERROR
+========================= */
+
+#pesanError {
+    margin-top: 18px;
+
+    color: #BFDBFE;
+
+    font-weight: 500;
+}
+
+/* =========================
+   SAD BOX
+========================= */
+
+.sad-box {
+    margin-top: 20px;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    animation: popup .45s ease;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.emoji {
+    font-size: 60px;
+
+    animation: bounce 1.2s infinite;
+}
+
+.hint {
+    margin: 15px auto;
+
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    background: #EFF6FF;
+
+    color: #1E40AF;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    width: 170px;
+}
+
+@keyframes popup {
+
+    from {
+        opacity: 0;
+        transform: scale(.92);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-card {
+    width: 100%;
+
+    margin-top: 22px;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background: #071426;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.20);
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress {
+    margin-top: 15px;
+
+    width: 100%;
+
+    height: 7px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 100%;
+
+    width: 0%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2563EB,
+            #60A5FA
+        );
+
+    border-radius: inherit;
+
+    transition: width .2s ease;
+}
+
+/* =========================
+   VIDEO BUTTON
+========================= */
+
+.video-button {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 22px;
+
+    justify-content: center;
+}
+
+.skip {
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: none;
+}
+
+.skip:hover {
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: none;
+}
+
+/* =========================
+   SCRATCH CARD
+========================= */
+
+.scratch-container {
+    position: relative;
+
+    width: min(320px, 85vw);
+    height: min(320px, 85vw);
+
+    margin-top: 22px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.20);
+}
+
+.hidden-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#scratchCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    touch-action: none;
+}
+
+/* =========================
+   SCRATCH TEXT
+========================= */
+
+#scratchText {
+    margin-top: 18px;
+
+    font-weight: 500;
+
+    color: var(--text-soft);
+}
+
+/* =========================
+   ENVELOPE
+========================= */
+
+.envelope {
+    position: relative;
+
+    width: min(320px, 85vw);
+    height: 220px;
+
+    margin-top: 25px;
+
+    cursor: pointer;
+
+    transition:
+        transform .3s ease;
+}
+
+.envelope:hover {
+    transform: translateY(-4px);
+}
+
+.envelope-top {
+    position: absolute;
+
+    width: 100%;
+    height: 120px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563EB,
+            #60A5FA
+        );
+
+    clip-path:
+        polygon(
+            0 0,
+            100% 0,
+            50% 100%
+        );
+
+    transition: .8s;
+
+    z-index: 5;
+
+    filter:
+        drop-shadow(
+            0 8px 15px
+            rgba(37, 99, 235, .20)
+        );
+}
+
+.letter {
+    position: absolute;
+
+    bottom: 0;
+
+    width: 100%;
+    height: 190px;
+
+    background: #F8FAFC;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    transform: translateY(80px);
+
+    transition: .8s;
+
+    overflow: auto;
+
+    color: #334155;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.letter h2 {
+    text-align: center;
+
+    color: #1D4ED8;
+
+    margin-bottom: 15px;
+}
+
+.open .envelope-top {
+    transform: rotateX(180deg);
+
+    transform-origin: top;
+}
+
+.open .letter {
+    transform: translateY(-10px);
+}
+
+#typingText {
+    line-height: 28px;
+
+    font-size: 15px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    #app {
+        width: 92%;
+        min-height: 520px;
+
+        padding: 30px 20px;
+
+        border-radius: 24px;
+    }
+
+    .numpad {
+        grid-template-columns:
+            repeat(3, 65px);
+    }
+
+    .numpad button {
+        height: 52px;
+    }
+
+    .pin-box {
+        width: 38px;
+        height: 44px;
+    }
+
+    .video-button {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .video-button .btn {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================
+   MEMORY GALLERY
+========================= */
+.memory-gallery {
+    width: 100%;
+    max-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    padding: 12px 10px 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+.memory-gallery::-webkit-scrollbar { width: 5px; }
+.memory-gallery::-webkit-scrollbar-thumb {
+    background: rgba(147,197,253,.45);
+    border-radius: 20px;
+}
+.polaroid {
+    position: relative;
+    background: #fff;
+    padding: 8px 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,.20);
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+.polaroid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.polaroid-text {
+    color: #1E3A8A;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 9px;
+}
+.photo-1 { transform: rotate(-3deg); }
+.photo-2 { transform: rotate(3deg); }
+.photo-3 { transform: rotate(2deg); }
+.photo-4 { transform: rotate(-4deg); }
+.polaroid:hover {
+    transform: rotate(0deg) translateY(-7px) scale(1.03);
+    box-shadow: 0 18px 35px rgba(37,99,235,.28);
+    z-index: 3;
+}
+.memory-lightbox {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: rgba(3,15,30,.88);
+    backdrop-filter: blur(12px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease, visibility .3s ease;
+    z-index: 9999;
+}
+.memory-lightbox.active { opacity: 1; visibility: visible; }
+.memory-lightbox img {
+    max-width: min(90vw,700px);
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.45);
+    transform: scale(.85);
+    transition: transform .35s ease;
+}
+.memory-lightbox.active img { transform: scale(1); }
+#memoryCaption {
+    margin-top: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.close-memory {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255,255,255,.12);
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    transition: background .2s ease, transform .2s ease;
+}
+.close-memory:hover {
+    background: rgba(96,165,250,.30);
+    transform: rotate(90deg);
+}
+.music-player {
+    width: 100%;
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-radius: 18px;
+    background: rgba(255,255,255,.10);
+    border: 1px solid rgba(255,255,255,.16);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+.music-title { color: #fff; font-size: 14px; font-weight: 600; }
+.music-subtitle { color: #BFDBFE; font-size: 11px; margin-top: 2px; }
+.music-progress { display:flex; align-items:center; gap:8px; margin-top:10px; }
+.music-progress span { color:#BFDBFE; font-size:10px; min-width:28px; text-align:center; }
+#musicProgress { flex:1; height:5px; appearance:none; border-radius:10px; background:rgba(255,255,255,.15); cursor:pointer; }
+#musicProgress::-webkit-slider-thumb { appearance:none; width:12px; height:12px; border-radius:50%; background:#60A5FA; cursor:pointer; }
+.music-controls { display:flex; align-items:center; justify-content:center; gap:14px; margin-top:10px; }
+.music-controls button { width:36px; height:36px; border:none; border-radius:50%; background:rgba(255,255,255,.10); color:white; cursor:pointer; font-size:14px; transition:transform .2s ease, background .2s ease; }
+.music-controls button:hover { background:rgba(96,165,250,.25); transform:translateY(-2px); }
+.music-controls .play-button { width:44px; height:44px; background:linear-gradient(135deg,#2563EB,#60A5FA); font-size:17px; box-shadow:0 6px 16px rgba(37,99,235,.3); }
+.music-controls .play-button:hover { background:linear-gradient(135deg,#3B82F6,#93C5FD); transform:scale(1.05); }
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    #app { width: 92%; min-height: 520px; padding: 30px 20px; border-radius: 24px; }
+    .numpad { grid-template-columns: repeat(3, 65px); }
+    .numpad button { height: 52px; }
+    .pin-box { width: 38px; height: 44px; }
+    .video-button { flex-direction: column; width: 100%; }
+    .video-button .btn { width: 100%; }
+    .memory-gallery { gap: 12px; max-height: 260px; padding: 8px 6px 15px; }
+    .polaroid { padding: 6px 6px 10px; }
+    .polaroid-text { font-size: 9px; }
+    .music-player { padding: 12px; }
+}
+        /* HALAMAN BARU KARTU UCAPAN */
+        #greeting-card-page {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 20000;
+            opacity: 0;
+            transition: 1s;
+            overflow: hidden;
+        }
+
+        /* Background Foto Blur + Hitam Putih */
+        .card-bg-mosaic {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            filter: grayscale(100%) blur(8px) brightness(40%);
+            transform: scale(1.05);
+            /* Menghilangkan sisa putih di ujung akibat efek blur */
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .card-bg-mosaic img {
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+        }
+
+        /* Struktur Utama Kartu Ucapan Fisik */
+        .physical-card {
+            background: rgba(255, 255, 255, 0.95);
+            width: 92%;
+            max-width: 460px;
+            height: 620px;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+            position: relative;
+            padding: 40px 22px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 5;
+        }
+
+        /* Foto Kecil Hiasan yang Bisa Di-drag */
+        .mini-photo {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            object-fit: cover;
+            cursor: grab;
+            z-index: 10;
+            touch-action: none;
+        }
+
+        .mini-photo:active {
+            cursor: grabbing;
+            z-index: 100;
+        }
+
+        .m1 {
+            top: 20px;
+            left: 20px;
+            transform: rotate(-10deg);
+        }
+
+        .m2 {
+            top: 20px;
+            right: 20px;
+            transform: rotate(15deg);
+        }
+
+        .m3 {
+            bottom: 80px;
+            left: 20px;
+            transform: rotate(12deg);
+        }
+
+        .m4 {
+            bottom: 80px;
+            right: 20px;
+            transform: rotate(-12deg);
+        }
+
+        .card-wish-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--blue-deep);
+            margin-top: 50px;
+            margin-bottom: 15px;
+        }
+
+        /* Wadah Gosok Hadiah (Scratch Container) */
+        .card-scratch-container {
+            position: relative;
+            width: 100%;
+            height: 320px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Teks Rahasia di Lapisan Bawah */
+        .card-wish-body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 20px 15px;
+            overflow-y: auto;
+            text-align: center;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #555;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Kanvas Abu-abu di Lapisan Atas */
+        #scratch-canvas {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            cursor: crosshair;
+            z-index: 5;
+            touch-action: none;
+            display: block;
+        }
+
+        .close-card {
+            font-size: 0.85rem;
+            color: #b0b0b0;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-top: auto;
+            z-index: 20;
+        }
+
+/* PAGE 7 - FULL SCREEN, TANPA BINGKAI #APP */
+#page7 {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    overflow: visible;
+}
+
+#page7 > div {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+@media (max-width: 600px) {
+    #page7 {
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    #page7 > div {
+        min-height: 100vh;
+    }
+}
+
+
+/* =========================
+   TAMBAHAN: MYSTERY BOX + SURAT
+========================= */
+.mystery-wrap{
+    width:min(900px,94vw);
+    margin:24px auto;
+}
+.mystery-boxes{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    margin:28px auto;
+}
+.mystery-box{
+    border:0;
+    border-radius:24px;
+    padding:25px 12px;
+    min-height:150px;
+    background:linear-gradient(145deg,#fff,#ffe8f1);
+    box-shadow:0 12px 30px rgba(255,105,150,.18);
+    cursor:pointer;
+    transition:.3s ease;
+    font-size:3.2rem;
+}
+.mystery-box:hover{transform:translateY(-8px) rotate(-2deg);}
+.mystery-box:disabled{cursor:default;opacity:.7;transform:none;}
+.mystery-label{display:block;font-size:.95rem;font-weight:700;margin-top:10px;color:#d94d7b;}
+.mystery-result{
+    display:none;
+    margin:20px auto;
+    padding:22px;
+    border-radius:24px;
+    background:rgba(255,255,255,.88);
+    box-shadow:0 10px 28px rgba(0,0,0,.08);
+}
+.typed-letter{
+    text-align:left;
+    line-height:1.8;
+    min-height:150px;
+    white-space:pre-wrap;
+}
+.letter-cursor{animation:blinkCursor .8s infinite;}
+@keyframes blinkCursor{50%{opacity:0;}}
+@media(max-width:600px){
+    .mystery-boxes{gap:10px;}
+    .mystery-box{min-height:125px;font-size:2.5rem;padding:18px 8px;}
+    .mystery-label{font-size:.8rem;}
+}
+
+/* =========================
+   HOME / MENU KEJUTAN
+========================= */
+#pageHome {
+    display: none;
+    padding: 30px 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#pageHome.active {
+    display: block;
+}
+
+.home-icon {
+    font-size: 4rem;
+    margin-bottom: 8px;
+    animation: homeFloat 2.5s ease-in-out infinite;
+}
+
+@keyframes homeFloat {
+    50% { transform: translateY(-7px) rotate(-2deg); }
+}
+
+.home-subtitle {
+    max-width: 520px;
+    margin: 0 auto 15px;
+}
+
+.home-status {
+    display: inline-block;
+    margin: 5px auto 22px;
+    padding: 9px 16px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.8);
+    color: var(--hot-pink);
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(0,0,0,.07);
+}
+
+.home-buttons {
+    width: min(100%, 620px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.home-btn {
+    border: 0;
+    border-radius: 18px;
+    padding: 15px 12px;
+    background: rgba(255,255,255,.92);
+    color: #8b3159;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.home-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.12);
+}
+
+.home-btn .home-small {
+    display: block;
+    margin-top: 4px;
+    font-size: .75rem;
+    opacity: .65;
+    font-weight: 500;
+}
+
+.home-note {
+    margin-top: 22px;
+    font-size: .85rem;
+    opacity: .7;
+}
+
+.home-final-btn {
+    border: 1px solid rgba(255,105,160,.25);
+}
+
+@media (max-width: 520px) {
+    .home-buttons {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   PAGE 6 - FULL SCREEN
+   TANPA BINGKAI #APP
+========================= */
+
+#page6 {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+#page6 > div {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+/* Hilangkan bingkai #app saat Page 6 aktif */
+body.page6-active #app {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+</style>
+
+</head>
+
+<body>
+    <audio id="bgMusic" loop>
+
+<source src="hati.m3.mp3" type="audio/mpeg">
+
+</audio>
+<audio id="memoryAudio"></audio>
+
+<div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- HOME / MENU TERBUKA -->
+<div class="page" id="pageHome">
+    <div class="home-icon">🏠</div>
+    <h1>🏠 Rumah Kejutan</h1>
+    <p class="home-subtitle">
+        Semua kejutan yang sudah kamu buka ada di sini 💗
+    </p>
+
+    <div class="home-status" id="homeStatus">
+        Kejutan terbuka: 0 / 7
+    </div>
+
+    <div class="home-buttons" id="homeButtons"></div>
+
+    <p class="home-note">
+        Kamu bisa kembali ke halaman yang sudah terbuka kapan saja ✨
+    </p>
+</div>
+
+<div id="app">
+
+<!-- PAGE 1 -->
+
+<div class="page active" id="page1">
+
+<div class="big-heart">
+
+❤️
+
+</div>
+
+<h1>
+
+Hello Wlcome Cantik
+
+</h1>
+
+<p>
+
+Hari ini bukan hanya hari yang biasa.
+
+tetapi hari ini yang membuat dunia menjadi lebih indah,
+
+karena seseorang telah lahir, tapi siapa ya?
+PENCET MULAI KAO MAU TAU HEHEH
+
+</p>
+
+<button class="btn" onclick="nextPage(2)">
+
+Mulai 🎁
+
+</button>
+
+</div>
+
+<!-- PAGE 2 KOSONG -->
+
+<div class="page" id="page2">
+
+<h1>Security Check 🔐</h1>
+
+<p>Masukkan PIN untuk mengeakses nya.</p>
+
+<div class="pin-display">
+
+<div class="pin-box" id="box0"></div>
+<div class="pin-box" id="box1"></div>
+<div class="pin-box" id="box2"></div>
+<div class="pin-box" id="box3"></div>
+<div class="pin-box" id="box4"></div>
+<div class="pin-box" id="box5"></div>
+
+</div>
+
+<div class="numpad">
+
+<button onclick="pressNum(1)">1</button>
+<button onclick="pressNum(2)">2</button>
+<button onclick="pressNum(3)">3</button>
+
+<button onclick="pressNum(4)">4</button>
+<button onclick="pressNum(5)">5</button>
+<button onclick="pressNum(6)">6</button>
+
+<button onclick="pressNum(7)">7</button>
+<button onclick="pressNum(8)">8</button>
+<button onclick="pressNum(9)">9</button>
+
+<button onclick="hapusPin()">⌫</button>
+<button onclick="pressNum(0)">0</button>
+<button onclick="cekPin()">✔</button>
+
+</div>
+
+<p id="pesanError"></p>
+
+</div>
+
+ <!-- =========================
+         SOAL SANDI
+         ========================= -->
+    <div class="page" id="page30">
+
+        <h1>🧩 Teka-Teki Foto</h1>
+
+        <p class="subtitle">
+            Perhatikan foto di bawah ini dan coba tebak jawabannya! 👀
+        </p>
+
+        <!-- TEMPAT FOTO -->
+        <div class="photo-box">
+            <span>📷</span>
+        </div>
+
+        <p class="question">
+            Apa jawaban dari teka-teki foto tersebut?
+        </p>
+
+        <input
+            type="text"
+            id="answer"
+            placeholder="Tulis jawabanmu..."
+            autocomplete="off"
+        >
+
+        <button onclick="checkAnswer()">
+            💗 Jawab
+        </button>
+
+        <div id="message"></div>
+
+    </div>
+
+
+    <!-- =========================
+         jawaban bennar
+         ========================= -->
+    <div class="page" id="page40">
+
+        <div class="heart">💗</div>
+
+        <h1>Jawaban Benar! 🎉</h1>
+
+        <p style="margin-top: 15px;">
+            Yeayyy! Kamu berhasil menjawab teka-tekinya dengan benar! 🥰
+        </p>
+
+        <p style="margin-top: 15px;">
+            Sekarang kamu bisa melanjutkan ke bagian berikutnya ✨
+        </p>
+
+    </div>
+
+<div class="page" id="page3">
+
+<h1>Liat dulu ya cantik ❤️</h1>
+
+<p>
+Liat sampe habis!!
+Setelah ini ada sesuatu lagi.... Semoga suka ya
+</p>
+
+<div class="video-card">
+
+<video id="birthdayVideo" controls>
+
+<source src="video.mp4" type="video/mp4">
+
+Browser kamu tidak mendukung video.
+
+</video>
+
+</div>
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+<div class="video-button">
+
+<button class="btn" onclick="playVideo()">
+
+▶ Putar
+
+</button>
+
+<button class="btn skip" onclick="nextPage(4)">
+
+Lewati
+
+</button>
+
+</div>
+
+</div>
+<div class="page" id="page4">
+
+    <h1>🎁 Ada Kejutan</h1>
+
+    <p>Gosok kartu di bawah ini untuk melihatnya.</p>
+
+    <div class="scratch-container">
+
+        <img src="1.jpg" alt="Kenangan pertama" class="hidden-image">
+
+        <canvas id="scratchCanvas" width="320" height="320"></canvas>
+
+    </div>
+
+    <p id="scratchText">
+        Gosok sekitar 70% kartu...
+    </p>
+
+    <button
+        id="nextScratch"
+        class="btn"
+        onclick="nextPage(5)"
+        style="display:none;">
+        Buka ❤️
+    </button>
+
+</div>
+
+<div class="page" id="page5">
+
+<h1>📸 Malaikat Kecilku</h1>
+
+<p class="memory-subtitle">Beberapa potret sederhana yang indah. 💙</p>
+
+<div class="memory-gallery">
+
+    <div class="polaroid photo-1" onclick="openMemory('1.jpeg', 'Kenangan Pertama 💙')">
+        <img src="1.jpg" alt="Kenangan Pertama">
+        <div class="polaroid-text">Kenangan Pertama 💙</div>
+    </div>
+
+    <div class="polaroid photo-2" onclick="openMemory('5.jpeg', 'Momen yang Indah ✨')">
+        <img src="5.jpg" alt="Momen yang indah">
+        <div class="polaroid-text">Momen yang Indah ✨</div>
+    </div>
+
+    <div class="polaroid photo-3" onclick="openMemory('4.jpeg', 'Senyum yang Diingat 😊')">
+        <img src="4.jpg" alt="Senyum yang diingat">
+        <div class="polaroid-text">Senyum yang Diingat 😊</div>
+    </div>
+
+    <div class="polaroid photo-4" onclick="openMemory('8.jpeg', 'Cerita Kita 🌙')">
+        <img src="8.jpg" alt="Cerita kita">
+        <div class="polaroid-text">Cerita Kita 🌙</div>
+    </div>
+
+</div>
+
+<div class="music-player">
+    <div class="music-title" id="songTitle">Lagu Keindahan</div>
+    <div class="music-subtitle" id="songArtist">Untuk menemani foto-foto yang indah</div>
+    <div class="music-progress">
+        <span id="currentTime">0:00</span>
+        <input type="range" id="musicProgress" value="0" min="0" max="100">
+        <span id="duration">0:00</span>
+    </div>
+    <div class="music-controls">
+        <button type="button" onclick="previousSong()">⏮</button>
+        <button type="button" class="play-button" id="playButton" onclick="toggleMusic()">▶</button>
+        <button type="button" onclick="nextSong()">⏭</button>
+    </div>
+</div>
+
+<button class="btn" onclick="nextPage(6)">Lanjut nyak 💙</button>
+
+</div>
+
+<!-- LIGHTBOX -->
+
+<div id="memoryLightbox" class="memory-lightbox" onclick="closeMemory()">
+
+    <button class="close-memory" onclick="closeMemory(event)">
+    </button>
+
+    <img
+        id="memoryImage"
+        src=""
+        alt="Foto kenangan"
+        onclick="event.stopPropagation()"
+    >
+
+    <div id="memoryCaption"></div>
+</div>
+</div>
+
+<!-- PAGE 6: MYSTERY BOX + SURAT -->
+ <section class="page" id="page6">
+<div>
+    <h1>🎁 Masih Ada Satu Kejutan...</h1>
+    <p>Pilih satu kotak. Jangan pilih terlalu lama, nanti kotaknya kabur 😆💗</p>
+
+    <div class="mystery-wrap">
+        <div class="mystery-boxes">
+            <button class="mystery-box" onclick="chooseMystery(this, 1)">🎁<span class="mystery-label">Kotak A</span></button>
+            <button class="mystery-box" onclick="chooseMystery(this, 2)">🎁<span class="mystery-label">Kotak B</span></button>
+            <button class="mystery-box" onclick="chooseMystery(this, 3)">🎁<span class="mystery-label">Kotak C</span></button>
+        </div>
+
+        <div id="mysteryResult" class="mystery-result">
+            <h2 id="mysteryTitle">💗</h2>
+            <div id="typedLetter" class="typed-letter"></div>
+            <button id="goToFinal" class="btn" onclick="nextPage(7)" style="display:none;">
+                Ada Surat Terakhir 💌
+            </button>
+        </div>
+    </div>
+</div>
+ </section>
+
+<!--kartu ucapan-->
+<section class="page" id="page7">
+    <div>
+        <h2>Ada sesuatu untukmu...</h2>
+        <button class="open-card-btn" onclick="openGreetingCard()">
+            Pencet ini nyak ❤️
+        </button>
+    </div>
+</section>
+
+    <div id="greeting-card-page">
+
+        <div class="card-bg-mosaic">
+            <img src="zs1.jpeg">
+            <img src="z.jpeg">
+            <img src="zs.jpeg">
+            <img src="9.jpeg">
+        </div>
+
+        <div class="physical-card">
+            <img src="zs1.jpeg" class="mini-photo m1"
+                draggable="false">
+            <img src="z.jpeg" class="mini-photo m2"
+                draggable="false">
+            <img src="zs.jpeg" class="mini-photo m3"
+                draggable="false">
+            <img src="9.jpeg" class="mini-photo m4"
+                draggable="false">
+
+            <h2 class="card-wish-title">Happy Birthday, Beautiful!</h2>
+
+            <div class="card-scratch-container">
+                <div class="card-wish-body">
+                    <p>Selamat ulang tahun untuk sosok yang sangat spesial!</p>
+                    <p style="margin: 8px 0;">Semoga di usia yang baru ini, setiap langkahmu dipeluk oleh kebahagiaan,
+                        hatimu dijaga kedamaian, dan mimpimu mekar dengan indah.</p>
+                    <p>Terima kasih telah hadir dan memberi begitu banyak warna berharga di dunia ini.</p>
+                    <p
+                        style="font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: var(--hot-pink); margin-top: 10px;">
+                        With Love,</p>
+                    <p style="font-weight: 600;">[Namamu]</p>
+                </div>
+                <canvas id="scratch-canvas"></canvas>
+            </div>
+
+            <p style="font-size: 0.75rem; color: var(--rose-pink); font-weight: 600; margin-bottom: 5px;">👉 Gosok kotak
+                di atas & Geser foto-foto kecilnya!</p>
+            <p class="close-card" onclick="goHome()">Kembali ke atas</p>
+        </div>
+    </div>
+
+</div>
+</body>
+ <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+    let pin="";
+let percobaan=0;
+
+
+const password="250829";
+
+// =========================
+// SISTEM HOME / HALAMAN TERBUKA
+// =========================
+const openedPages = new Set([1]);
+
+const pageNames = {
+    1: "🏠 Awal Kejutan",
+    2: "🔐 Security Check",
+    3: "🎬 Video",
+    4: "🎁 Kartu Gosok",
+    5: "📸 Kenangan",
+    6: "🎁 Mystery Box",
+    7: "💌 Surat Terakhir"
+};
+
+function markPageOpened(page) {
+    openedPages.add(Number(page));
+    updateHome();
+}
+
+function nextPage(page) {
+
+    page = Number(page);
+    markPageOpened(page);
+
+    // Atur mode fullscreen untuk Page 6 dan Page 7
+    document.body.classList.remove("page6-active");
+
+    if (page === 6) {
+        document.body.classList.add("page6-active");
+    }
+
+    document.querySelectorAll(".page").forEach(function(item) {
+        item.classList.remove("active");
+    });
+
+    const target = document.getElementById("page" + page);
+    if (target) target.classList.add("active");
+
+    const app = document.getElementById("app");
+
+    if (app) {
+        app.style.display = "";
+    }
+
+   if ((page === 6 || page === 7) && app) {
+    app.style.display = "none";
+}
+
+    if (openedPages.size >= 7) {
+        const homeButton = document.getElementById("homeFromFinal");
+        if (homeButton) homeButton.style.display = "inline-block";
+    }
+
+    if (page === 3) {
+        const music = document.getElementById("bgMusic");
+        if (music) music.play().catch(function(){});
+    }
+}
+
+function updateHome() {
+    const status = document.getElementById("homeStatus");
+    const container = document.getElementById("homeButtons");
+
+    if (!status || !container) return;
+
+    status.textContent =
+        "Kejutan terbuka: " + Math.min(openedPages.size, 7) + " / 7";
+
+    container.innerHTML = "";
+
+    [1, 2, 3, 4, 5, 6, 7].forEach(function(page) {
+        if (!openedPages.has(page)) return;
+
+        const button = document.createElement("button");
+        button.className = "home-btn";
+        button.innerHTML =
+            pageNames[page] +
+            '<span class="home-small">Sudah terbuka ✓</span>';
+
+        button.onclick = function() {
+            openPageFromHome(page);
+        };
+
+        container.appendChild(button);
+    });
+}
+
+function openPageFromHome(page) {
+    page = Number(page);
+
+    const home = document.getElementById("pageHome");
+    const app = document.getElementById("app");
+
+    if (home) home.classList.remove("active");
+
+    if (app) app.style.display = "";
+
+    document.querySelectorAll(".page").forEach(function(item) {
+        item.classList.remove("active");
+    });
+
+    const target = document.getElementById("page" + page);
+    if (target) target.classList.add("active");
+
+    if (page === 7 && app) {
+        app.style.display = "none";
+    }
+}
+
+function goHome() {
+    const app = document.getElementById("app");
+    const home = document.getElementById("pageHome");
+
+    if (app) app.style.display = "none";
+
+    document.querySelectorAll(".page").forEach(function(item) {
+        item.classList.remove("active");
+    });
+
+    if (home) home.classList.add("active");
+
+    updateHome();
+}
+
+setTimeout(updateHome, 0);
+
+function pressNum(angka){
+
+if(pin.length>=6) return;
+
+pin+=angka;
+
+updatePin();
+
+}
+
+function hapusPin(){
+
+pin=pin.slice(0,-1);
+
+updatePin();
+
+}
+
+function updatePin(){
+
+for(let i=0;i<6;i++){
+
+const box=document.getElementById("box"+i);
+
+box.textContent=i<pin.length?"●":"";
+
+}
+
+}
+
+function cekPin(){
+
+    const pesan = document.getElementById("pesanError");
+
+    if(pin === password){
+
+        pesan.innerHTML = "";
+        percobaan = 0;
+        nextPage(3);
+        return;
+
+    }
+
+    percobaan++;
+
+    document.getElementById("app").animate([
+
+        {transform:"translateX(-10px)"},
+        {transform:"translateX(10px)"},
+        {transform:"translateX(-10px)"},
+        {transform:"translateX(0px)"}
+
+    ],{
+
+        duration:350
+
+    });
+
+    if(percobaan >= 3){
+
+        pesan.innerHTML = `
+        <div class="sad-box">
+            <div class="emoji">🥺</div>
+
+            <h3>Yahh... kamu sudah 3 kali salah.</h3>
+
+            <p>
+                Gak apa-apa kok ❤️<br>
+                Aku kasih bocoran ya...
+            </p>
+
+            <div class="hint">
+                PIN : <b>${password}</b>
+            </div>
+
+            <button class="btn" onclick="resetPin()">
+                Coba Lagi
+            </button>
+
+        </div>
+        `;
+
+    }else{
+
+        pesan.innerHTML =
+        `PIN salah 😥<br>
+        Percobaan : ${percobaan}/3`;
+
+    }
+
+    pin="";
+    updatePin();
+
+}
+function resetPin(){
+
+    percobaan = 0;
+
+    pin = "";
+
+    updatePin();
+
+    document.getElementById("pesanError").innerHTML = "";
+
+}
+const video = document.getElementById("birthdayVideo");
+const progress = document.getElementById("progressBar");
+
+if (video && progress) {
+
+    function playVideo() {
+        video.play();
+    }
+
+    video.addEventListener("timeupdate", () => {
+        const persen = (video.currentTime / video.duration) * 100;
+        progress.style.width = persen + "%";
+    });
+
+    video.addEventListener("ended", () => {
+        nextPage(4);
+    });
+
+}
+const canvas = document.getElementById("scratchCanvas");
+const ctx = canvas.getContext("2d");
+
+ctx.fillStyle="#3B82F6";
+ctx.fillRect(0,0,canvas.width,canvas.height);
+
+ctx.font="35px Poppins";
+ctx.fillStyle="white";
+ctx.textAlign="center";
+ctx.fillText("GOSOK DI SINI",160,165);
+
+let menggosok=false;
+
+canvas.addEventListener("mousedown",()=>{
+
+menggosok=true;
+
+});
+
+canvas.addEventListener("mouseup",()=>{
+
+menggosok=false;
+
+cekScratch();
+
+});
+
+canvas.addEventListener("mousemove",gosok);
+
+canvas.addEventListener("touchstart",()=>{
+
+menggosok=true;
+
+});
+
+canvas.addEventListener("touchend",()=>{
+
+menggosok=false;
+
+cekScratch();
+
+});
+
+canvas.addEventListener("touchmove",function(e){
+
+gosok(e.touches[0]);
+
+e.preventDefault();
+
+});
+
+function gosok(e){
+
+if(!menggosok) return;
+
+const rect=canvas.getBoundingClientRect();
+
+const x=e.clientX-rect.left;
+
+const y=e.clientY-rect.top;
+
+ctx.globalCompositeOperation="destination-out";
+
+ctx.beginPath();
+
+ctx.arc(x,y,22,0,Math.PI*2);
+
+ctx.fill();
+
+}
+function cekScratch(){
+
+const pixels=ctx.getImageData(0,0,canvas.width,canvas.height);
+
+let kosong=0;
+
+for(let i=3;i<pixels.data.length;i+=4){
+
+if(pixels.data[i]===0){
+
+kosong++;
+
+}
+
+}
+
+const persen=(kosong/(canvas.width*canvas.height))*100;
+
+document.getElementById("scratchText").innerHTML=
+
+"Terbuka : "+persen.toFixed(0)+"%";
+
+if(persen>=70){
+
+document.getElementById("nextScratch").style.display="inline-block";
+
+document.getElementById("scratchText").innerHTML=
+
+"🎉 Selamat! Hadiah berhasil dibuka.";
+
+}
+}
+const isiSurat =
+
+`Selamat ulang tahun.
+
+Terima kasih sudah menjadi seseorang yang begitu berarti.
+
+Semoga setiap langkahmu selalu dipenuhi kebahagiaan, kesehatan, dan impian yang tercapai.
+
+Semoga senyummu tidak pernah hilang.
+
+Dan semoga hari ini menjadi awal dari tahun yang luar biasa.
+
+❤️ Happy Birthday ❤️`;
+
+let indexHuruf = 0;
+
+function bukaSurat(){
+
+const amplop=document.querySelector(".envelope");
+
+amplop.classList.add("open");
+
+document.getElementById("typingText").innerHTML="";
+
+indexHuruf=0;
+
+ketik();
+
+confetti();
+
+}
+
+function ketik(){
+
+if(indexHuruf<isiSurat.length){
+
+document.getElementById("typingText").innerHTML+=isiSurat.charAt(indexHuruf);
+
+indexHuruf++;
+
+setTimeout(ketik,40);
+
+}else{
+
+document.getElementById("finishBtn").style.display="inline-block";
+
+}
+
+}
+function confetti(){
+
+for(let i=0;i<120;i++){
+
+const c=document.createElement("div");
+
+c.innerHTML="🎉";
+
+c.style.position="fixed";
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.top="-30px";
+
+c.style.fontSize=(15+Math.random()*20)+"px";
+
+c.style.transition="4s linear";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{
+
+c.style.top="110vh";
+
+c.style.transform="rotate(720deg)";
+
+},50);
+
+setTimeout(()=>{
+
+c.remove();
+
+},4500);
+
+}
+
+}
+setInterval(()=>{
+
+const hati=document.createElement("div");
+
+hati.innerHTML="💙";
+
+hati.style.position="fixed";
+
+hati.style.left=Math.random()*100+"vw";
+
+hati.style.bottom="-30px";
+
+hati.style.fontSize=(15+Math.random()*20)+"px";
+
+hati.style.transition="6s linear";
+
+document.body.appendChild(hati);
+
+setTimeout(()=>{
+
+hati.style.bottom="110vh";
+
+hati.style.opacity="0";
+
+},100);
+
+setTimeout(()=>{
+
+hati.remove();
+
+},6000);
+
+},600);
+
+/* =========================
+   MEMORY LIGHTBOX
+========================= */
+
+function openMemory(image, caption) {
+
+    const lightbox =
+        document.getElementById("memoryLightbox");
+
+    const memoryImage =
+        document.getElementById("memoryImage");
+
+    const memoryCaption =
+        document.getElementById("memoryCaption");
+
+    memoryImage.src = image;
+
+    memoryCaption.textContent = caption;
+
+    lightbox.classList.add("active");
+
+}
+
+
+function closeMemory(event) {
+
+    if (event) {
+
+        event.stopPropagation();
+
+    }
+
+    const lightbox =
+        document.getElementById("memoryLightbox");
+
+    lightbox.classList.remove("active");
+
+}
+
+/* =========================
+   MEMORY MUSIC PLAYER
+========================= */
+const memorySongs = [
+    { title: "Lagu Kenangan", artist: "Untuk menemani kenangan", src: "music.mp3" }
+];
+let currentSong = 0;
+const memoryAudio = document.getElementById("memoryAudio");
+const playButton = document.getElementById("playButton");
+const songTitle = document.getElementById("songTitle");
+const songArtist = document.getElementById("songArtist");
+const musicProgress = document.getElementById("musicProgress");
+const currentTime = document.getElementById("currentTime");
+const duration = document.getElementById("duration");
+
+function loadSong(index){
+    const song = memorySongs[index];
+    memoryAudio.src = song.src;
+    songTitle.textContent = song.title;
+    songArtist.textContent = song.artist;
+}
+function toggleMusic(){
+    if(memoryAudio.paused){
+        memoryAudio.play().then(()=> playButton.textContent="⏸").catch(()=>{});
+    } else {
+        memoryAudio.pause();
+        playButton.textContent="▶";
+    }
+}
+function nextSong(){
+    currentSong = (currentSong + 1) % memorySongs.length;
+    loadSong(currentSong);
+    toggleMusic();
+}
+function previousSong(){
+    currentSong = (currentSong - 1 + memorySongs.length) % memorySongs.length;
+    loadSong(currentSong);
+    toggleMusic();
+}
+function formatTime(seconds){
+    if(isNaN(seconds)) return "0:00";
+    const m = Math.floor(seconds / 60);
+    const s = Math.floor(seconds % 60);
+    return m + ":" + (s < 10 ? "0" : "") + s;
+}
+if(memoryAudio){
+    loadSong(currentSong);
+    memoryAudio.addEventListener("loadedmetadata", ()=> duration.textContent = formatTime(memoryAudio.duration));
+    memoryAudio.addEventListener("timeupdate", ()=>{
+        if(!memoryAudio.duration) return;
+        musicProgress.value = (memoryAudio.currentTime / memoryAudio.duration) * 100;
+        currentTime.textContent = formatTime(memoryAudio.currentTime);
+    });
+    memoryAudio.addEventListener("ended", ()=>{
+        nextSong();
+    });
+    musicProgress.addEventListener("input", ()=>{
+        if(memoryAudio.duration) memoryAudio.currentTime = (musicProgress.value / 100) * memoryAudio.duration;
+    });
+}
+
+function openGreetingCard() {
+    const card = document.getElementById("greeting-card-page");
+
+    card.style.display = "flex";
+
+    // Tunggu sampai kartu benar-benar terlihat agar ukuran canvas terbaca dengan benar
+    requestAnimationFrame(() => {
+        card.style.opacity = "1";
+
+        setTimeout(() => {
+            setupCardScratch();
+        }, 100);
+    });
+}
+
+function closeGreetingCard() {
+    const card = document.getElementById("greeting-card-page");
+
+    card.style.opacity = "0";
+
+    setTimeout(() => {
+        card.style.display = "none";
+    }, 1000);
+}
+
+// =========================
+// SCRATCH CARD KARTU UCAPAN
+// =========================
+
+const cardCanvas = document.getElementById("scratch-canvas");
+const cardCtx = cardCanvas.getContext("2d");
+
+let cardMenggosok = false;
+
+// Membuat ukuran canvas mengikuti kotak
+function setupCardScratch() {
+
+    const rect = cardCanvas.getBoundingClientRect();
+
+    cardCanvas.width = rect.width;
+    cardCanvas.height = rect.height;
+
+    // Warna penutup
+    cardCtx.fillStyle = "#C0C0C0";
+    cardCtx.fillRect(
+        0,
+        0,
+        cardCanvas.width,
+        cardCanvas.height
+    );
+
+    // Tulisan pada penutup
+    cardCtx.fillStyle = "#555";
+    cardCtx.font = "bold 20px Poppins";
+    cardCtx.textAlign = "center";
+    cardCtx.textBaseline = "middle";
+
+    cardCtx.fillText(
+        "GOSOK DI SINI ✨",
+        cardCanvas.width / 2,
+        cardCanvas.height / 2
+    );
+}
+
+// Mulai menggosok
+cardCanvas.addEventListener("mousedown", () => {
+    cardMenggosok = true;
+});
+
+// Berhenti menggosok
+cardCanvas.addEventListener("mouseup", () => {
+    cardMenggosok = false;
+});
+
+cardCanvas.addEventListener("mouseleave", () => {
+    cardMenggosok = false;
+});
+
+// Gerakan mouse
+cardCanvas.addEventListener("mousemove", gosokKartu);
+
+// Untuk HP
+cardCanvas.addEventListener("touchstart", (e) => {
+    cardMenggosok = true;
+    e.preventDefault();
+});
+
+cardCanvas.addEventListener("touchend", () => {
+    cardMenggosok = false;
+});
+
+cardCanvas.addEventListener("touchmove", (e) => {
+    if (!cardMenggosok) return;
+
+    gosokKartu(e.touches[0]);
+
+    e.preventDefault();
+});
+
+// Fungsi menghapus lapisan
+function gosokKartu(e) {
+
+    if (!cardMenggosok) return;
+
+    const rect = cardCanvas.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    cardCtx.globalCompositeOperation = "destination-out";
+
+    cardCtx.beginPath();
+
+    cardCtx.arc(
+        x,
+        y,
+        25,
+        0,
+        Math.PI * 2
+    );
+
+    cardCtx.fill();
+}
+
+// Canvas halaman 7 dibuat saat kartu dibuka, bukan saat halaman masih tersembunyi.
+
+
+// =========================
+// MYSTERY BOX + SURAT MENGETIK
+// =========================
+let mysteryChosen = false;
+
+function chooseMystery(button, number){
+    if(mysteryChosen) return;
+    mysteryChosen = true;
+
+    document.querySelectorAll('.mystery-box').forEach(box => box.disabled = true);
+    button.textContent = number === 1 ? '💖' : number === 2 ? '✨' : '🌷';
+
+    const result = document.getElementById('mysteryResult');
+    const title = document.getElementById('mysteryTitle');
+    const letter = document.getElementById('typedLetter');
+    const next = document.getElementById('goToFinal');
+
+    result.style.display = 'block';
+    title.textContent = '💌 Kamu menemukan sebuah pesan...';
+
+    const text = `Hai kamu...\n\nKalau kamu sudah sampai di sini, berarti rasa penasaranmu berhasil membawa kamu melewati semua kejutan ini. 😆\n\nSebenarnya hadiah paling sederhana dari semua ini adalah sebuah pesan: semoga di usia yang baru, kamu selalu menemukan alasan untuk tersenyum, orang-orang baik di sekitarmu, dan banyak hal kecil yang membuat harimu terasa berarti. 💗\n\nJangan lupa menikmati hari ini. Kamu pantas mendapatkan banyak kebahagiaan. ✨`;
+
+    typeLetter(text, letter, () => {
+        next.style.display = 'inline-block';
+        if(window.confetti){
+            confetti({particleCount:80, spread:75, origin:{y:.7}});
+        }
+    });
+}
+
+function typeLetter(text, element, done){
+    element.innerHTML = '';
+    let i = 0;
+    const cursor = document.createElement('span');
+    cursor.className = 'letter-cursor';
+    cursor.textContent = '▌';
+    element.appendChild(cursor);
+
+    function type(){
+        if(i < text.length){
+            cursor.before(document.createTextNode(text.charAt(i)));
+            i++;
+            setTimeout(type, text.charAt(i-1) === '\n' ? 90 : 28);
+        }else{
+            cursor.remove();
+            if(done) done();
+        }
+    }
+    type();
+}
+
+// Confetti saat kartu ucapan terakhir dibuka
+const oldOpenGreetingCard = window.openGreetingCard;
+window.openGreetingCard = function(){
+    if(typeof oldOpenGreetingCard === 'function') oldOpenGreetingCard();
+    setTimeout(() => {
+        if(window.confetti){
+            confetti({particleCount:140, spread:100, origin:{y:.55}});
+        }
+    }, 500);
+};
+
+  function checkAnswer() {
+
+            // Mengambil jawaban dari kotak input
+            let answer = document
+                .getElementById("answer")
+                .value
+                .trim()
+                .toLowerCase();
+
+            let message = document.getElementById("message");
+
+            // Jawaban yang benar
+            if (answer === "SANDI IMUT") {
+
+                message.innerHTML = "Benar! 💗";
+
+                message.className = "success";
+
+                // Tunggu sebentar lalu pindah ke halaman 2
+                setTimeout(function() {
+
+                    document.getElementById("page30").style.display = "none";
+                    document.getElementById("page40").style.display = "block";
+
+                }, 700);
+
+            } else {
+
+                message.innerHTML = "Hmm... belum benar 😝 Coba lagi!";
+                message.className = "error";
+
+            }
+        }
+
+        // Bisa menekan Enter untuk menjawab
+        document.getElementById("answer").addEventListener("keypress", function(event) {
+
+            if (event.key === "Enter") {
+                checkAnswer();
+            }
+
+        });
+</script>
+
+</body>
+</html>
